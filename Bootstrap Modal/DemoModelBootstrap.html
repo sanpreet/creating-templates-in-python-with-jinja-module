@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Defining the head section where title, meta charset as well as Bootstrap CDN is inserted -->
+<head>
+  <title>Demo Demonstrate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This stylesheet <link> comes before other stylesheet  -->
+  <!-- Stylesheet loads css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <!-- Inserting Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Inserting Javascript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!-- Container is a div with 15 pixel padding by default     -->
+<div class="container">
+  <!-- Heading Bootstrap Model Plugin -->
+  <h2>Bootstrap Model Plugin Example</h2>
+  <!-- Trigger the modal with a button -->
+  <!-- class="btn btn-info btn-lg": This class will show the size of button as large -->
+  <!-- data-toggle = to convert checkboxes into toggles. -->
+  <!-- data-target =  the target tells Bootstrap which element is going to open-->
+  <!-- To know more about data-toggle as well as data-target, please go through the below link -->
+  <!-- https://stackoverflow.com/questions/21944735/what-is-the-data-target-attribute-in-bootstrap-3 -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#customModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="customModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+          <!-- One have modal header, modal body as well as modal footer -->
+        <div class="modal-header">
+            <!-- data-dismiss closes the class when you click on the close button -->
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>India is a great Place to live. I live in chandigarh</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+   
+    </div>
+  </div>
+</div>
+</body>
+</html>
