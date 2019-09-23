@@ -36,6 +36,6 @@ python manage.py runserver
 
 ## References
 [Installing mysql client](https://stackoverflow.com/questions/7475223/mysql-config-not-found-when-installing-mysqldb-python-interface)  
-[Django 2.0 url() to path() Cheatsheet](https://consideratecode.com/2018/05/02/django-2-0-url-to-path-cheatsheet/)
+[Django 2.0 url() to path() Cheatsheet](https://consideratecode.com/2018/05/02/django-2-0-url-to-path-cheatsheet/)  
 [saganshul django tutorial](https://github.com/saganshul/django_tutorials)
       
