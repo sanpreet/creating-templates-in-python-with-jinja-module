@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Display Info</title>
+</head>
+<body>
+ <!-- loop all the Objects stored in the database      -->
+ <!-- personinfo is in form of dictionary or context -->
+    {% for each_info in personinfo %}
+    <h2>{{ each_info.name }}</h2>
+    <h2>{{ each_info.occupation }}</h2>
+    <h2>{{ each_info.aim }}</h2>
+    <!-- Loop is ended here  -->
+    {% endfor %}
+</body>
+</html>
+
+
