@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Display Info</title>
+</head>
+<h2 style="color:#9b42f5">Articles Headlines by John Smith</h2>
+<br>
+<style type="text/css"> 
+    td{ 
+        padding: 8px 8px; 
+        border: 1px solid black;
+        color: blue; 
+    } 
+</style> 
+
+<body>
+<table> 
+    {% for each_result in articles_john %}
+    <tr>
+    <td>{{ each_result}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<h2 style="color:#1381a3">Articles Headlines written by Sanpreet Singh </h2>
+<table> 
+    {% for each_result in articles_sanpreet %}
+    <tr>
+    <td>{{ each_result}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<h4 style="color:#a35913">Article Headline "another heading by John Smith" is written by:</h4>
+
+<table> 
+    {% for each_result in list_name_j %}
+    <tr>
+    <td>{{ each_result}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
