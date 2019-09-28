@@ -31,7 +31,18 @@ python manage.py migrate
 To finally run the project, please execute the below command  
 ```
 python manage.py runserver 
-```
+```  
+
+# keypoints with respect to relationaldatadjango   
+
+![FEATURE_IMAGE](https://user-images.githubusercontent.com/3431730/65816813-0f979780-e21e-11e9-98bc-3558c0b6e732.png)  
+<strong>Keypoints</strong>  
+<ol>
+  <li> I have created two tables and they are related to each other using foreign key</li>
+  <li> in views.py search queries are applied to retrieve data from database and show it on the front end.</li>
+  </ol>  
+  
+ALSO remember, I have used mysql at the backend. Please follow this link https://justinmi.me/blog/2017/04/28/migrating-sql-databases for migrating to mysql database with Django.   
 
 
 ## References
