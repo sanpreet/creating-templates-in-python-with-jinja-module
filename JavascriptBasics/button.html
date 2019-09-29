@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<!-- Script -->
+<script>
+function myFunction() {
+  document.getElementById("DateTime").innerHTML = Date();
+}
+</script>
+
+<body>
+<h1>Showing the time</h1>
+<p>Current time will be displayed while clicking on this button</p>
+<button onclick="myFunction()">Show the date and time</button>
+
+<!-- This is the id which is passed to the function so that time can
+be shown in this paragraph -->
+<h3 id="DateTime"></h3>
+
+</body>
+</html>
