@@ -44,6 +44,12 @@ python manage.py runserver
   
 ALSO remember, I have used mysql at the backend. Please follow this link https://justinmi.me/blog/2017/04/28/migrating-sql-databases for migrating to mysql database with Django.   
 
+# Keypoints with respect to decorators_python  
+![Feature_image](https://user-images.githubusercontent.com/3431730/65826825-0c95b900-e2a9-11e9-87f1-59b710a896e6.png)
+
+1.) Decorators are used to call other function inside the decorator function.  
+2.) This makes codes small and handy.
+  
 
 ## References
 [Installing mysql client](https://stackoverflow.com/questions/7475223/mysql-config-not-found-when-installing-mysqldb-python-interface)  
