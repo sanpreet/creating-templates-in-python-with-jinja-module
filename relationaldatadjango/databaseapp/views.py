@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Reporter, Article
 
+""" If you delete a reporter, his articles will be deleted (assuming that the ForeignKey was defined with django.db.models.ForeignKey.on_delete set to CASCADE, which is the default):"""
 
 # Create your views here.
 def index(request):
@@ -29,7 +30,29 @@ def index(request):
 	"""passing each_id to the another table as this is relational database"""
 	for each_id in list_reporter_id:
 		print(Article.objects.filter(reporter__pk=each_id))
+	# count all the entries (Reportors) whose headline starts with 'This'
+	# repeatation is allowed		
+	print("All entries............")
+	print(Reporter.objects.filter(article__headline__startswith='This').count())	
 
+	# count only unique entries (Reporters whose headline starts with 'This')
+	# Only Unique entries
+	print()
+	print("Only Unique entries............")
+	print(Reporter.objects.filter(article__headline__startswith='This').distinct().count())
+	
+	# ordering a queryset in ascending order
+	print()
+	print("Ordering in ascending order......")
+	print("Ordering Reporters by last_name.........")
+	print(Reporter.objects.order_by('last_name'))
+
+	# ordering a query set in descending oder
+	# special thanks to https://stackoverflow.com/questions/9834038/django-order-by-query-set-ascending-and-descending
+	print()
+	print("Ordering in descending order using -")
+	print("Ordering Reporters by last_name.........")
+	print(Reporter.objects.order_by('-last_name'))
 
 	# context is used because jinja template needs a context to be diplayed
 	# on the web page	
@@ -39,7 +62,7 @@ def index(request):
 		"list_name_j": list_name_j,
 				}
 
-	# print("show the dictionary please....", context)
+	# prin	t("show the dictionary please....", context)
 
 	return render(request, 'filter_results.html', context)
 
