@@ -11,7 +11,8 @@ In this Project, I have used mysql as a database instead of sqlite3 which is def
   <li> For installing mysqlclient using pip it is important to install these two additional packages.    
    
     sudo apt-get install libmysqlclient-dev    
-    sudo apt-get install python-dev 
+    sudo apt-get install python-dev
+    sudo apt-get install libssl-dev
     
  </li>
 </ol>
